@@ -1,4 +1,0 @@
-lionsgate
-=========
-
-www.lgrmg.ca

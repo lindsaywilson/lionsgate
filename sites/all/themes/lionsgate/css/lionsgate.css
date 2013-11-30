@@ -1,0 +1,163 @@
+
+/* ---------------
+   GLOBAL STYLES
+   --------------- */
+
+body{ font-family:Arial, Helvetica, sans-serif; font-size:62.5%; color:#414151; line-height:1.5em; background:#CFDFF4 url(../images/tile_bg.gif) center 0; font-family: 'Muli';}
+#page{ background:url(../images/bg_inner.jpg) center 108px no-repeat; }
+.wrap{ margin:0 auto; max-width:960px; position:relative}
+
+#header{ position:relative; background:url(../images/bg_header_left.jpg) 0 0 no-repeat }
+#header > .inner{background:url(../images/bg_header_right.jpg) right 0 no-repeat }
+#header .wrap{ height:108px; background:url(../images/tile_header.png) 0 0 repeat-x }
+#logo{position:absolute; top:0; left:0; z-index:3}
+#site-slogan{ line-height:38px; color:#fff; padding-left:300px; font-size:1.5em; position:absolute; bottom:0; left:0; z-index:1; font-family: 'Nunito'; font-weight:300 }
+.logo-mobile{ display:none}
+
+#main{ position:relative; min-height:550px }
+#main > .inner{ background:url(../images/tile_shadow.png) repeat-x; padding:30px}
+#content{ background:#fff; border-radius:10px; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, .15); max-width:67%; min-height:420px; margin-left:30px}
+#content .inner{ padding:20px 60px 35px 35px}
+
+
+/* ---------------
+   FOOTER
+   --------------- */
+   
+#footer{ background:#424251; position:relative; line-height:1}
+#footer .wrap > .inner{ padding:20px 20px 60px; }
+
+#contact{ margin:0 auto; padding:10px 0; max-width:780px; background:#9CB3C2 url(../images/tile_footer.png) repeat-x; border-radius:10px; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, .15)}
+#contact .inner{ margin:0 25px; background:url(../images/logo_footer.png) right bottom no-repeat; position:relative}
+#contact a{ text-decoration:none}
+#contact a:hover{ text-decoration:underline}
+.block-contact-info,
+.block-contact-info.contextual-links-region{ position:absolute; top:10px; left:0}
+.block-contact-info p{ margin-bottom:10px}
+.block-contact-quotes{ text-align:center; padding-top:40px; max-width:45%; margin-left:27%}
+.block-contact-quotes p:last-child{ font-size:1.1em; margin-top:43px}
+
+#copyright{ position:absolute; color:#DBDBEA; font-size:1.2em; left:20px; bottom:20px;  font-family: 'Nunito'; font-weight:300}
+
+.footer-menu{ position:absolute; right:20px; bottom:20px; margin:0;  font-family: 'Nunito'; font-weight:300}
+.footer-menu ul, .footer-menu ul li{ margin:0; padding:0; list-style:none; color:#DBDBEA}
+.footer-menu ul{ font-size:1.2em}
+.footer-menu ul li{ float:left; padding:0; list-style:none; margin-right:10px; background:url(../images/bg_footer_li.gif) 0 center no-repeat; padding-left:12px}
+.footer-menu ul li:first-child{ background:none}
+.footer-menu ul li:last-child{ margin-right:0}
+.footer-menu ul li a{ color:#DBDBEA; text-decoration:none;}
+.footer-menu ul li a:hover{ text-decoration:underline}
+.footer-menu ul li a.active{ color:#DBDBEA;}
+
+
+/* ---------------
+   NAV
+   --------------- */
+
+.menu{ padding:0}
+#menu-toggle{ display:none; }
+#menu-toggle a{ outline:none}
+
+nav{ outline:none; position:relative; z-index:99}
+#navigation{ background:url(../images/tile_nav.png) repeat-x; padding:10px 0 0 300px; text-transform:uppercase; font-family: 'Muli';}
+#navigation ul{ line-height:50px;}
+#navigation ul li{ background:url(../images/bg_navdivider.png) no-repeat; float:left;}
+#navigation ul li a{ padding:0 15px 9px; display:block; color:#313140; text-decoration:none; background:right center no-repeat; outline:none }
+#navigation ul > li:last-child a{ background-image:url(../images/bg_navdivider.png);}
+#navigation ul li:hover,
+#navigation ul li.active-trail,
+#navigation ul li a:hover,
+#navigation ul li a.active{ background:#E1E1ED}
+
+#navigation ul ul{ line-height:1.2em; position:absolute; z-index:2; border-top:1px solid #fff; display:none; text-transform:none; font-size:.9em;  width:150px;}
+#navigation ul li:hover > ul{ display:block}
+#navigation ul ul li{ float:none; border:1px solid #fff; border-top:none}
+#navigation ul ul > li:last-child a{ background-image:none;}
+#navigation ul ul li a{ background:#edeef3; padding: 8px 15px}
+
+#navigation ul ul ul{ left:149px; top:-1px; font-size:1em}
+#navigation ul ul li:hover a,
+#navigation ul ul ul li a{ background:#E1E1ED;}
+#navigation ul ul ul li.active-trail,
+#navigation ul ul ul li a:hover,
+#navigation ul ul ul li a.active{ background:#bfbece}
+
+
+/* ---------------
+   HOME
+   --------------- */
+
+body.front{ background:#424251}
+.front #header{ height:69px; background:url(../images/tile_header.png) repeat-x}
+.front #main{ background-image:url(../images/bg_home.jpg); min-height:538px;}
+.front #main > .inner{ padding:0}
+.front #content{ background:none; max-width:100%; box-shadow:none; border-radius:0; margin:0}
+.front #content .inner{ padding-left:15px}
+.front #footer{ padding-top:0}
+
+.front .logo-slogan{ padding-top:40px; width:285px; text-align:center; margin-left:}
+.front #home-slogan{ font-size:2.2em; line-height:1.5em; margin-top:50px; color:#fff; text-shadow: 3px 3px 3px rgba(0, 0, 0, .45); font-family: 'Nunito'; font-weight:300}
+
+.view-home-promo-slides{ max-width:554px; position:absolute; right:30px; top:80px; }
+.view-home-promo-slides ul.slides{ font-size:1em}
+.view-home-promo-slides .flexslider{ border-radius:0; border:7px solid #fff; 5px 5px 4px 0px rgba(0, 0, 0, .15);}
+.view-home-promo-slides h2{ background:#9797A6; color:#fff; text-transform:uppercase; font-weight:normal; padding:5px 5px 5px 11px; margin:0; font-family: 'Nunito'; font-weight:300}
+.view-home-promo-slides .image{ height:325px; position:relative; max-width:540px; background-position: center 0; background-size:100% auto; background-repeat:no-repeat; width:540px}
+.view-home-promo-slides .body{ position:absolute; bottom:0; left:0; margin:0 15px 15px; background:rgba(0,0,0,.70); padding:15px; color:#fff; font-size:1.2em; line-height:1.2em; font-family: 'Nunito'; font-weight:300; font-size:1.3em }
+.view-home-promo-slides .more{ text-transform:uppercase; color:#fff; text-decoration:none}
+.view-home-promo-slides .more:hover{ text-decoration:underline}
+.view-home-promo-slides .more:after{ content:' >';}
+.view-home-promo-slides .edit{ position:absolute; top:2px; right:2px;background:#fff; }
+.view-home-promo-slides .edit a{ display:block; padding:3px 10px; text-transform:uppercase}
+
+.view-home-promo-slides .flex-control-paging li a{ width:15px; height:15px; background:#ECECFB; box-shadow:none}
+.view-home-promo-slides .flex-control-paging li a:hover,
+.view-home-promo-slides .flex-control-paging li a.flex-active{ background:#424251}
+.view-home-promo-slides .flex-direction-nav a{ background:url(../images/arrows.png) 0 0; width:47px; height:47px; box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, .33); border-radius:47px}
+.view-home-promo-slides .flex-direction-nav a.flex-prev{ left:-30px}
+.view-home-promo-slides .flex-direction-nav a.flex-next{ background-position:-50px 0; right:-30px}
+.view-home-promo-slides .flex-direction-nav a.flex-prev:hover{ background-position:0 -47px;}
+.view-home-promo-slides .flex-direction-nav a.flex-next:hover{ background-position:-50px -47px; }
+.view-home-promo-slides .flexslider .flex-direction-nav a, 
+.view-home-promo-slides .flexslider .flex-direction-nav a{ display:block; opacity:1}
+.view-home-promo-slides .flexslider:hover a.flex-prev{ left:-30px}
+.view-home-promo-slides .flexslider:hover a.flex-next{ right:-30px}
+
+
+/* ---------------
+   PAGE
+   --------------- */
+
+.field-name-field-image{ position:absolute; right:30px; top:240px; background:rgba(32,32,47,0.8); padding:15px; border-radius:15px; max-width:33%; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, .15);}
+.field-name-field-image .field-items{ max-width:260px}
+
+   
+/* ---------------
+   HTML STYLES
+   --------------- */
+
+h1, h2, h3, h4{ padding:0; margin:0 0 20px; line-height:1; font-family: 'Nunito'; font-weight:400}
+h1{ color:#B20000; font-size:2em; }
+h2,
+ul h2, ol h2{ color:#747484; font-size:1.6em; text-transform:uppercase; }
+h2.block-title{ color:#B20000; text-transform:uppercase; font-family: 'Muli';}
+h3, h4,
+ul h3, ol h3,
+ul h4, ol h4{ font-size:1.4em}
+
+p, ul, ol{ font-size:1.3em; margin:0 0 20px}
+p:last-child, ul:last-child, ol:last-child{ margin-bottom:0}
+ul ul, ol ol,
+ul ul ul, ol ol ol{ font-size:1em}
+ul#admin-menu-menu,
+ul#admin-menu-icon{ font-size:9px}
+
+ul p, ol p{ font-size:1em}
+
+a{ color:#414151}
+
+.tabs-primary{ position:absolute; top:2px; right:0; margin:0; padding:0; background:none; border-bottom:2px solid #fff;}
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active{ background:#fff; border-radius:0; }
+a.tabs-primary__tab-link:hover{ background:#f3f3f3}
+.tabs-primary__tab, .tabs-primary__tab.is-active{ border-radius:0; border:none}
+
