@@ -88,6 +88,7 @@ scripts[] = js/script.js
 regions[navigation]     = Navigation bar
 regions[help]           = Help
 regions[content]        = Content
+regions[sidebar]        = Side Bar
 regions[contact]         = Contact
 regions[footer]         = Footer
 

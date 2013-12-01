@@ -57,18 +57,21 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php if ($is_front): ?>
+
       	<div class="logo-slogan">
         	<div id="logo-home"><img src="/<?php print path_to_theme().'/images/logo_home.png' ?>" /></div>
 			<div id="home-slogan" ><?php print $site_slogan; ?></div>
         </div>
+        
+        <?php include DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--social.php'; ?>
+        
         <?php
 		$block = module_invoke('views', 'block_view', 'home_promo_slides-block');
         print render($block);
+		$blog = module_invoke('views', 'block_view', 'wp_blog_latest_posts-block');
+        print render($blog);
 		?>
-	  <?php else: ?>
-      <?php print render($page['content']); ?>
-      <?php endif; ?>
+
       <?php print $feed_icons; ?>
     </div>
     </div><!-- /#content -->

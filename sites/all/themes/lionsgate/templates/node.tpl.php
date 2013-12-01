@@ -37,8 +37,10 @@
 	}
 	print render($content);
   ?>
-
+  
   <?php print render($content['links']); ?>
+  
+  <?php include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php'; ?>
 
   <?php print render($content['comments']); ?>
 

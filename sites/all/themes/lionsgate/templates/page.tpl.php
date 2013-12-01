@@ -46,7 +46,7 @@
 
   <div id="main">
   <div class="inner">
-  <div class="wrap">
+  <div class="wrap clearfix">
   
     <div id="content" class="column" role="main">
     <div class="inner">
@@ -57,21 +57,29 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php if ($is_front): ?>
-      	<div class="logo-slogan">
-        	<div id="logo-home"><img src="/<?php print path_to_theme().'/images/logo_home.png' ?>" /></div>
-			<div id="home-slogan" ><?php print $site_slogan; ?></div>
-        </div>
-        <?php
-		$block = module_invoke('views', 'block_view', 'home_promo_slides-block');
-        print render($block);
-		?>
-	  <?php else: ?>
+      
+      <?php
+		$views_page = views_get_page_view();
+		if (is_object($views_page)) {
+		  print '<h1>'.$title.'</h1>';
+		}
+	  ?>
+      
       <?php print render($page['content']); ?>
-      <?php endif; ?>
+
       <?php print $feed_icons; ?>
     </div>
     </div><!-- /#content -->
+    
+    <?php print render($page['sidebar']); ?>
+    <?php
+		$views_page = views_get_page_view();
+		if (is_object($views_page)) {
+		  include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php';
+		}
+	  ?>
+    
+    
 
   </div>
   </div>
@@ -83,6 +91,7 @@
     <?php print render($page['contact']); ?>
 	<?php print render($page['footer']); ?>
     <div id="copyright">Copyright <?php print date("Y"); ?> Lions Gate Risk Management Inc  All Rights Reserved</div>
+    <?php include DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--social.php'; ?>
   </div>
   </div>
   </footer>

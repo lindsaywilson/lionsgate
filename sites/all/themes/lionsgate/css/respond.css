@@ -9,11 +9,14 @@
 #content .inner{ padding:20px 30px 30px 20px}
 .front #content .inner{ padding:0 20px 10px}
 
+#sidebar, .page-views #sharing{width:31%}
+
 #footer .wrap > .inner{ padding-bottom:20px}
 .footer-menu,
 #copyright{ position:relative; top:0; left:0; right:0; text-align:center}
 .footer-menu{ margin:20px 0}
 .footer-menu ul li{ float:none; display:inline-block; }
+#social-links{ margin:20px 0}
 
 .view-home-promo-slides{ position:relative; top:0; right:0; margin:0 auto}
 .view-home-promo-slides .image{ width:100%}
@@ -21,6 +24,9 @@
 .view-home-promo-slides .flexslider:hover a.flex-prev{ left:-25px}
 .view-home-promo-slides .flex-direction-nav a.flex-next,
 .view-home-promo-slides .flexslider:hover .flex-direction-nav a.flex-next{ right:-25px}
+
+.front .view-wp-blog-latest-posts{ width:auto; max-width:90%; margin:0 auto 20px; bottom:0; right:0; position:relative; text-align:center}
+.front #social-links{ position:relative; right:0; top:0}
 
 }
 
@@ -47,7 +53,13 @@
 
 #main{ min-height:inherit}
 #main > .inner{ padding:20px}
-#content{ max-width:100%; /* DO NOT REMOVE - JS MEDIA QUERY */ position:relative; min-height:inherit}
+#page{ position:relative;} /* DO NOT REMOVE - JS MEDIA QUERY */
+#content{ max-width:100%; position:relative; min-height:inherit;}
+#sidebar{ float:none; width:100%; margin-top:20px}
+.page-views #sharing{ float:none; width:100%; margin-top:30px}
+
+.section-blog #content,
+.section-blog-tags #content{ float:none; position:relative}
 
 #main-menu{ display:none}
 #menu-toggle{ display:block; cursor:pointer; font-size:1.5em; font-weight:bold; text-align:center; background:#DCDCEA; margin:1px 0; padding:5px 0}
@@ -75,14 +87,18 @@
 #navigation ul ul ul li a.active{ background:#EDEEF3}
 
 .field-name-field-image{ display:none}
+.node-wp-blog .field-name-field-image{ display:block}
+
+#sharing{ position:relative; right:0; top:0; margin:20px 0}
 	
 }
 
 @media (max-width: 640px) {
 
 #main{ background:none}
-#content{ box-shadow:none; border-radius:0}
 #main > .inner{ padding:0}
+#content, #sidebar{ box-shadow:none; border-radius:0;}
+#sidebar{ margin:0;padding-bottom:30px; border-top:1px solid #d0d0d2}
 
 #contact .inner{ background:none}
 .block-contact-info, 
@@ -91,6 +107,8 @@
 .block-contact-quotes p:last-child{ margin:20px 0}
 
 #footer-blocks, #copyright{ line-height:1.5}
+
+.node-wp-blog #sharing{ position:relative; right:0; top:0; margin-bottom:10px}
 
 }
 

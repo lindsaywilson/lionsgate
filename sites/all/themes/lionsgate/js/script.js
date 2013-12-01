@@ -6,6 +6,10 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 	
+	openWindow = function(url){
+		window.open(url,"","width=500,height=200");
+	}
+	
 	timerResize = function(){
         // Define if mobile
         this.checkMobile();
@@ -16,7 +20,7 @@ Drupal.behaviors.my_custom_behavior = {
     };
 	checkMobile = function (){
         // Define if on mobile (based on CCS media Queries : Device < 800px wide)
-        if ( $("#content").css("position") === 'relative') {
+        if ( $("#page").css("position") === 'relative') {
 			if( window.isMobile ){
                 window.deviceHasChanged = false;
             }else{
