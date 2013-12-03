@@ -22,10 +22,8 @@ body{ font-family:Arial, Helvetica, sans-serif; font-size:62.5%; color:#414151; 
 #sidebar{ float:right; background:#fff; border-radius:10px; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, .15); width:28%}
 #sidebar .inner{ padding:20px}
 
-#sharing{ position:absolute; top:200px; right:8.5%}
+#sharing{ position:absolute; top:0; right:-20px}
 #sharing .fb_iframe_widget span{ margin-top:-19px; display:block}
-
-.page-views #sharing{ position:relative; top:0; right:0; float:right; width:28%; text-align:center; margin-top:30px}
 
 
 /* ---------------
@@ -57,8 +55,11 @@ body{ font-family:Arial, Helvetica, sans-serif; font-size:62.5%; color:#414151; 
 .footer-menu ul li a:hover{ text-decoration:underline}
 .footer-menu ul li a.active{ color:#DBDBEA;}
 
-#social-links{ text-align:center; margin:20px 0 -45px}
+#social-links{ text-align:center; margin:20px 0 -45px -45px}
 #social-links a{ margin:0 4px}
+
+#spyder{ position:absolute; bottom:5px; right:20px; color:#DBDBEA; text-decoration:none}
+#spyder:hover{ text-decoration:underline}
 
 
 /* ---------------
@@ -70,10 +71,10 @@ body{ font-family:Arial, Helvetica, sans-serif; font-size:62.5%; color:#414151; 
 #menu-toggle a{ outline:none}
 
 nav{ outline:none; position:relative; z-index:99}
-#navigation{ background:url(../images/tile_nav.png) repeat-x; padding:10px 0 0 300px; text-transform:uppercase; font-family: 'Muli';}
+#navigation{ background:url(../images/tile_nav.png) repeat-x; padding:10px 0 0 254px; text-transform:uppercase; font-family: 'Muli';}
 #navigation ul{ line-height:50px;}
 #navigation ul li{ background:url(../images/bg_navdivider.png) no-repeat; float:left;}
-#navigation ul li a{ padding:0 15px 9px; display:block; color:#313140; text-decoration:none; background:right center no-repeat; outline:none }
+#navigation ul li a{ padding:0 13px 9px; display:block; color:#313140; text-decoration:none; background:right center no-repeat; outline:none }
 #navigation ul > li:last-child a{ background-image:url(../images/bg_navdivider.png);}
 #navigation ul li:hover,
 #navigation ul li.active-trail,
@@ -148,6 +149,7 @@ body.front{ background:#424251}
    PAGE
    --------------- */
 
+header{ position:relative}
 .field-name-field-image{ position:absolute; right:30px; top:240px; background:rgba(32,32,47,0.8); padding:15px; border-radius:15px; max-width:33%; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, .15);}
 .field-name-field-image .field-items{ max-width:260px}
 
@@ -158,9 +160,8 @@ body.front{ background:#424251}
 
 /* Node */
 .section-blog #content,
-.section-blog-tags #content{ float:left; position:relative}
+.section-blog-tags #content{ float:left; }
 
-.node-wp-blog #sharing{ position:absolute; right:20px; top:22px}
 .node-wp-blog h2{ margin-bottom:10px}
 .node-wp-blog p.submitted{ font-weight:bold; font-size:1em; margin:0}
 .node-wp-blog .field-name-field-image{ position:relative; border:none; top:0; right:0; background:none; max-width:100%; box-shadow:none; padding:0; margin-top:20px}

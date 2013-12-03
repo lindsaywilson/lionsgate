@@ -48,7 +48,10 @@
   <?php endif; ?>
   
   <?php if($term->vocabulary_machine_name == 'wp_blog_tags'): ?>
-  	<h1>Blog Tag: <?php print $term_name ?></h1>
+  	<header>
+    <h1>Blog Tag: <?php print $term_name ?></h1>
+    <?php include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php'; ?>
+    </header>
   <?php endif; ?>
 
   <div class="content">

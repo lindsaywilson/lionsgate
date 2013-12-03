@@ -60,11 +60,14 @@
       
       <?php
 		$views_page = views_get_page_view();
-		if (is_object($views_page)) {
+		if (is_object($views_page)): ?>
+		  <header>
+		  <?php 
 		  print '<h1>'.$title.'</h1>';
-		}
-	  ?>
-      
+		  include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php';?>
+          </header>
+      <?php endif; ?>
+      	
       <?php print render($page['content']); ?>
 
       <?php print $feed_icons; ?>
@@ -72,13 +75,7 @@
     </div><!-- /#content -->
     
     <?php print render($page['sidebar']); ?>
-    <?php
-		$views_page = views_get_page_view();
-		if (is_object($views_page)) {
-		  include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php';
-		}
-	  ?>
-    
+   
     
 
   </div>
@@ -92,6 +89,7 @@
 	<?php print render($page['footer']); ?>
     <div id="copyright">Copyright <?php print date("Y"); ?> Lions Gate Risk Management Inc  All Rights Reserved</div>
     <?php include DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--social.php'; ?>
+    <a id="spyder" href="http://www.spyderbaby.com/" target="_blank">Site design by Spyderbaby Productions</a>
   </div>
   </div>
   </footer>

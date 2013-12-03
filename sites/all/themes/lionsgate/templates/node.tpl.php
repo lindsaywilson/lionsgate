@@ -14,6 +14,8 @@
       <?php print render($title_prefix); ?>
         <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
       <?php print render($title_suffix); ?>
+      
+      <?php include_once DRUPAL_ROOT . '/' . path_to_theme() . '/templates/include--share.php'; ?>
 
       <?php if ($display_submitted): ?>
         <p class="submitted">
