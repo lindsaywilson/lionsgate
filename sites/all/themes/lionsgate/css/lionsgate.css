@@ -23,7 +23,7 @@ body{ font-family:Arial, Helvetica, sans-serif; font-size:62.5%; color:#414151; 
 #sidebar .inner{ padding:20px}
 
 #sharing{ position:absolute; top:0; right:-20px}
-#sharing .fb_iframe_widget span{ margin-top:-19px; display:block}
+#sharing a, #sharing iframe{ display:inline-block}
 
 
 /* ---------------
@@ -180,7 +180,8 @@ header{ position:relative}
 
 /* View */
 .node-wp-blog.node-teaser{ border-bottom:1px solid #d0d0d2; padding-bottom:15px; margin-bottom:15px}
-.node-wp-blog.node-teaser .field-name-body{ margin:10px 0 0 }
+.node-wp-blog.node-teaser .field-name-field-image{ float:left; width:33%}
+.node-wp-blog.node-teaser .field-name-body{ margin:18px 0 0 3%; float:left; width:63% }
 .field-name-taxonomy-wp-blog-tags .field-item{ display:inline; margin-left:5px}
 
    

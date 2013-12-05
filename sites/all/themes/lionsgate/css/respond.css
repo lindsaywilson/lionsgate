@@ -89,7 +89,10 @@
 .field-name-field-image{ display:none}
 .node-wp-blog .field-name-field-image{ display:block}
 
-#sharing{ position:relative; right:0; top:0; margin:20px 0}
+.node-wp-blog.node-teaser .field-name-field-image{ width:25%}
+.node-wp-blog.node-teaser .field-name-body{ width:72% }
+
+#sharing{ position:relative; right:0; top:0; margin:20px 0; }
 	
 }
 
@@ -114,5 +117,7 @@
 	
 .view-home-promo-slides .image{ height:auto}
 .view-home-promo-slides .body{ position:relative; top:0; left:0; margin:0; padding:30px}
+.node-wp-blog.node-teaser .field-name-field-image,
+.node-wp-blog.node-teaser .field-name-body{ width:100%; float:none; margin-left:0 }
 
 }
